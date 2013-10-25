@@ -1,4 +1,4 @@
-<h1>Listing products</h1>
+<h1>Listing of wonderful products</h1>
 
 <table>
   <tr>
@@ -22,7 +22,12 @@
     <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
+
 </table>
+
+<% @how_much_bacon.times do |i| %>
+  <p><strong><%= (i + 1) %>:</strong> Chunky Bacon</p>
+<% end %>
 
 <br />
 
